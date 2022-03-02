@@ -1,1 +1,1 @@
-# Mastering-Javascript
+# Mastering-Javascript from zero.
