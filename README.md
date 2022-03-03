@@ -1,1 +1,1 @@
-# Mastering-Javascript from zero.
+# Mastering-Javascript from zero with freeCodeCamp.
