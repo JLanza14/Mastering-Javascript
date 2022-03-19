@@ -13,9 +13,9 @@ number
 object
 */
 
-var myName; //We create a variable named myName, then i assign and create at the same time my name to the variable 
-var myName ="Josue Lanza"; // is going to be able to be uised throught the whole program
-let myName ="Josue Lanza";  // will only be used within the scope we declare the variable.
+var myName1; //We create a variable named myName, then i assign and create at the same time my name to the variable 
+var myName2 ="Josue Lanza"; // is going to be able to be uised throught the whole program
+let myName3 ="Josue Lanza";  // will only be used within the scope we declare the variable.
 const pi = 3.14; // it cant be changed
 
 var fullName; // When JavaScript variables are declared, they have an initial value of undefined.
@@ -45,9 +45,9 @@ b += 9;
 c += 7;
 
 //Escaping Literal Quotes in Strings
-var myStr = "I am a \"double quoted\" string inside \"double quotes\""
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
 //  Quoting Strings with Single Quotes.
-var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+var myStr2 = '<a href="http://www.example.com" target="_blank">Link</a>';
 
 /****
 \'	single quote
@@ -61,19 +61,19 @@ var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ***/
 
 //Escape sequences in Strings
-var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; 
+var myStr3 = "FirstLine\n\t\\SecondLine\nThirdLine"; 
 
 //Concatenning Strings with the puls Equals Operator
-let myStr = "This is the first sentence. "
+let myStr4 = "This is the first sentence. "
 myStr += "This is the second sentence."
 
 //COnstructing Strings with Variables
 const myName = "Josue";
-const myStr = "My name is " + myName + "and i am well!";
+const myStr5 = "My name is " + myName + "and i am well!";
 
 //Appending Variables to strings
 const someAdjective = "worthwhile";
-let myStr = "Learning to code is ";
+let myStr6 = "Learning to code is ";
 myStr += someAdjective;
 
 //Finding the Length of a String
@@ -84,7 +84,7 @@ lastNameLength = lastName.length;
 
 // Using bracket Notation to Find the First Character in a String
 let firstLetterOfLastName = "";
-const lastName = "Lovelace";
+const lastName2 = "Lovelace";
 firstLetterOfLastName = lastName[0];
 //Finding the last character without knowing the length
 const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
@@ -110,6 +110,38 @@ function functionWithArgs(a, b) {
   console.log(a + b);
 }
 functionWithArgs(10, 5);
+
+/* Global vs. Local Scope in Functions
+It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+*/
+const outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
+
+/* STAND IN LINE
+In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
+
+Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+Add the number to the end of the array, then remove the first element of the array.
+The nextInLine function should then return the element that was removed.
+*/
+
+function nextInLine(arr, item) {
+
+  arr.push(item);
+  return arr.shift();
+}
+
+const testArr = [1, 2, 3, 4, 5];
+
+// JSON.stringify way to change an array into a string that can easily can be printed out to the screen.
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
 
 
 
