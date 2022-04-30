@@ -147,8 +147,42 @@ The equality operator compares two values and returns true if they're equivalent
 Strict equality (===) is the counterpart to the equality operator (==). If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
 The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa.
 The greater than or equal to operator (>=) compares the values of two numbers. 
-
 */
+
+/* MULTIPLE IDENTICAL OPTIONS IN SWITCH STATEMENTS
+If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If you have multiple inputs with the same output, you can represent them in a switch statement like this:
+*/
+let result = "";
+switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+
+/* RETURNING BOOLEAN VALUES FROM FUNCTIONS
+Returns true or false.*/
+
+function isEqual(a, b) {
+  return a === b;
+}
+
+/* JAVASCRIP OBJECTS
+Objects are similar to arrays, except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties.
+
+Objects are useful for storing data in a structured way, and can represent real world objects
+*/
+
+const cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+
 
 
 
